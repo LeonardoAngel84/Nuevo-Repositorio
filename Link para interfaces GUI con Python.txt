@@ -1,0 +1,2 @@
+Link para interfaces GUI con Python:
+https://blog.330ohms.com/2022/01/12/como-crear-interfaces-gui-con-python/

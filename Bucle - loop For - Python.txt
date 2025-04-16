@@ -1,0 +1,20 @@
+import keyboard
+
+# Tu código existente aquí
+
+# Definir la función que se ejecutará cuando se presione la tecla escape
+def on_escape_key(event):
+    if event.name == 'esc':
+        keyboard.unhook_all()  # Detiene la detección de teclas
+        print("Se ha presionado la tecla de escape. El bucle ha terminado.")
+
+# Agregar el gancho (hook) para detectar la pulsación de teclas
+keyboard.on_press(on_escape_key)
+
+# Bucle "for" que se ejecutará hasta que se presione la tecla de escape
+for i in range(10):
+    print("Iteración:", i)
+    # Tu código dentro del bucle "for" aquí
+
+# Mantener el programa en ejecución hasta que se presione la tecla de escape
+keyboard.wait('esc')
